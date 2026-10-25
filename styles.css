@@ -1,0 +1,477 @@
+:root {
+  --space: #03060f;
+  --ink: #e9f7ff;
+  --muted: #9eb6d4;
+  --cyan: #3de4ff;
+  --cyan-deep: #149bff;
+  --line: rgba(61, 228, 255, 0.38);
+}
+
+body,
+.home-page {
+  background: var(--space) url("brand/space-field.png") center top / cover no-repeat fixed;
+  color: var(--ink);
+}
+
+.home-page:before {
+  opacity: 0.22;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.55) 0.6px, transparent 0.8px);
+  mix-blend-mode: screen;
+}
+
+.launch-strip {
+  background: #04101c;
+  color: var(--cyan);
+  letter-spacing: 0.16em;
+}
+
+.site-header {
+  color: var(--ink);
+  background: rgba(3, 8, 20, 0.82);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(16px);
+}
+
+.site-header .brand,
+.site-header .brand strong {
+  color: var(--ink);
+}
+
+.site-header .brand small,
+.site-nav a.active,
+.home-footer .footer-brand small {
+  color: var(--cyan);
+}
+
+.site-header .brand-mascot,
+.home-footer .brand-mascot {
+  border: 2px solid var(--cyan);
+  border-radius: 50%;
+  transform: none;
+  box-shadow: 0 0 18px rgba(61, 228, 255, 0.55);
+  background: #04101c;
+}
+
+.site-nav a {
+  color: var(--ink);
+}
+
+.site-nav a:hover,
+.text-action:hover {
+  color: var(--cyan);
+}
+
+.chain-identity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  width: auto;
+  min-width: 112px;
+  background: #000;
+  border: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.chain-identity span {
+  color: #8eb6d4;
+}
+
+.chain-identity strong {
+  color: #fff;
+  font: 800 14px/1 Manrope, sans-serif;
+  letter-spacing: 0.12em;
+}
+
+.nav-toggle {
+  display: none;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  padding: 8px 12px;
+  font: 800 11px Manrope, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.home-hero:before {
+  background: rgba(4, 10, 22, 0.78);
+  box-shadow: 0 0 0 1px var(--line), 0 24px 70px rgba(20, 155, 255, 0.22);
+  clip-path: none;
+  border-radius: 18px;
+}
+
+.home-hero:after,
+.home-page > .official-links:before,
+.home-page > .official-links:after {
+  display: none;
+}
+
+.hero-kicker {
+  color: #041018 !important;
+  background: var(--cyan);
+}
+
+.home-hero h1 {
+  color: var(--ink);
+  font-size: clamp(64px, 6.2vw, 108px);
+  text-shadow: 0 0 28px rgba(61, 228, 255, 0.28);
+}
+
+.home-hero h1:after {
+  background: var(--cyan);
+}
+
+.home-hero-copy > p,
+.home-intro > div > p,
+.not-list p,
+.identity-is > p,
+.identity-is blockquote {
+  color: var(--muted);
+}
+
+.hero-market-highlight {
+  color: #041018;
+  background: var(--cyan);
+  border-color: #041018;
+  box-shadow: 7px 7px #041018;
+}
+
+.primary-action {
+  color: #041018;
+  background: var(--cyan);
+  border-color: #041018;
+  box-shadow: 0 0 24px rgba(61, 228, 255, 0.45);
+}
+
+.primary-action:hover {
+  background: #8af3ff;
+}
+
+.text-action {
+  color: var(--ink);
+  border-bottom-color: var(--cyan);
+}
+
+.paste-shadow {
+  background: rgba(20, 155, 255, 0.55);
+}
+
+.halftone-disc {
+  background-color: #050814;
+  background-image: radial-gradient(rgba(61, 228, 255, 0.45) 1.4px, transparent 1.6px);
+}
+
+.home-hero-art img {
+  filter: drop-shadow(0 0 28px rgba(61, 228, 255, 0.45));
+}
+
+.art-note {
+  color: var(--ink);
+  background: rgba(4, 10, 22, 0.88);
+  border-color: var(--cyan);
+  box-shadow: 0 0 16px rgba(61, 228, 255, 0.35);
+}
+
+.art-note.note-two {
+  background: var(--cyan);
+  color: #041018;
+}
+
+.home-hero-copy {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.home-hero-copy > p {
+  max-width: 100%;
+}
+
+.marker-heart {
+  color: var(--cyan);
+}
+
+.hero-stamp {
+  color: var(--ink);
+  border-color: var(--cyan);
+  background: rgba(4, 10, 22, 0.72);
+}
+
+.hero-stamp:before,
+.hero-stamp:after {
+  border-color: var(--cyan);
+}
+
+.hero-stamp i,
+.hero-stamp i:after {
+  color: var(--cyan);
+  background: transparent;
+}
+
+.home-page > .official-links {
+  background: rgba(4, 10, 22, 0.86);
+  box-shadow: 0 0 0 1px var(--line), 0 18px 50px rgba(20, 155, 255, 0.18);
+  transform: none;
+}
+
+.home-page > .official-links .official-links-heading h2,
+.official-links-heading > p {
+  color: var(--ink);
+}
+
+.official-links-heading > p,
+.home-section-number,
+.not-list article > span {
+  color: var(--cyan);
+}
+
+.home-page > .official-links .official-links-list {
+  border-color: var(--line);
+}
+
+.home-page > .official-links .contract-link,
+.contract-link {
+  background: var(--cyan);
+  color: #041018;
+  clip-path: none;
+}
+
+.contract-link code {
+  overflow-wrap: anywhere;
+  font-size: 13px;
+}
+
+.contract-link button {
+  border-color: #041018;
+  color: #041018;
+}
+
+.home-page > .official-links .official-links-list > a,
+.official-links-list > a {
+  background: rgba(6, 14, 28, 0.92);
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+.home-page > .official-links .official-links-list > a:nth-child(3) {
+  transform: none;
+}
+
+.official-links-list a small,
+.home-page > .official-links .official-links-list a small {
+  color: var(--muted);
+}
+
+.home-page > .official-links .official-links-list > a:hover,
+.official-links-list > a:hover {
+  background: rgba(20, 80, 120, 0.55);
+}
+
+.link-symbol {
+  color: var(--cyan);
+  border-color: var(--line);
+}
+
+.swappy-girls-section:before {
+  background: #050814 url("brand/energy-band.png") center / cover no-repeat;
+  border-color: var(--line);
+  box-shadow: 0 0 40px rgba(61, 228, 255, 0.28);
+}
+
+.swappy-girls-heading h2 {
+  color: var(--ink);
+}
+
+.swappy-girls-heading h2 strong {
+  color: #041018;
+  background: var(--cyan);
+}
+
+.swappy-girls-heading h2 span {
+  color: #041018;
+  background: #d7f7ff;
+}
+
+.swappy-girls-heading > p {
+  color: #041018;
+  background: var(--cyan);
+  border-color: #d7f7ff;
+  box-shadow: 10px 10px rgba(20, 155, 255, 0.45);
+}
+
+.swappy-girls-heading > p:after {
+  color: #fff;
+}
+
+.sigil-banner {
+  display: block;
+  width: calc(100% - 84px);
+  height: auto;
+  margin: 6px 42px 8px;
+  border: 1px solid var(--line);
+  box-shadow: 0 0 36px rgba(61, 228, 255, 0.35);
+}
+
+.home-intro {
+  background: rgba(4, 12, 28, 0.88);
+  color: var(--ink);
+  clip-path: none;
+  transform: none;
+  border: 1px solid var(--line);
+  box-shadow: 0 0 32px rgba(20, 155, 255, 0.2);
+}
+
+.home-intro .home-section-number {
+  color: var(--cyan);
+  border-color: var(--cyan);
+}
+
+.home-intro h2,
+.identity-not h2,
+.identity-is h3,
+.identity-is-title {
+  color: var(--ink);
+}
+
+.identity-not {
+  background: rgba(4, 10, 22, 0.9);
+  color: var(--ink);
+  border-color: var(--line);
+  clip-path: none;
+}
+
+.identity-not .not-list,
+.identity-not .not-list article {
+  border-color: var(--line);
+}
+
+.identity-not .not-list p {
+  color: var(--muted);
+}
+
+.identity-is {
+  background: rgba(6, 16, 36, 0.92) url("brand/energy-band.png") center / cover no-repeat;
+  color: var(--ink);
+  clip-path: none;
+  transform: none;
+  box-shadow: inset 0 0 0 1px var(--line), 0 0 40px rgba(61, 228, 255, 0.16);
+}
+
+.identity-is-title {
+  border-bottom-color: var(--cyan);
+}
+
+.identity-is h3 em {
+  color: var(--cyan);
+}
+
+.identity-is blockquote {
+  border-top-color: var(--line);
+}
+
+.home-footer {
+  background: rgba(3, 8, 18, 0.92);
+  box-shadow: 0 0 0 1px var(--line), 0 0 28px rgba(20, 155, 255, 0.2);
+  clip-path: none;
+}
+
+.home-footer .footer-brand,
+.home-footer a {
+  color: var(--ink);
+}
+
+.home-footer p {
+  color: var(--muted);
+}
+
+.brand strong {
+  max-width: 240px;
+}
+
+@media (max-width: 900px) {
+  .site-header {
+    position: relative;
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  .site-header .header-actions {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .site-header .chain-identity {
+    display: none;
+  }
+
+  .site-header nav.site-nav {
+    display: none;
+    order: 3;
+    flex: 1 0 100%;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 0 4px;
+  }
+
+  .site-header nav.site-nav.open {
+    display: flex;
+  }
+
+  .site-nav a {
+    padding: 10px 0;
+  }
+
+  .sigil-banner {
+    width: calc(100% - 24px);
+    margin-inline: 12px;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    min-height: 74px;
+  }
+
+  .site-header .brand {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .site-header .brand > span:last-child {
+    display: flex;
+    min-width: 0;
+  }
+
+  .site-header .brand strong {
+    max-width: 100%;
+    font-size: 13px;
+  }
+
+  .nav-toggle {
+    flex: 0 0 auto;
+  }
+
+  .home-hero {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  .home-hero h1,
+  .home-hero-copy > p {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .home-hero h1 {
+    font-size: 34px;
+  }
+}
